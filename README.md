@@ -31,7 +31,7 @@
 
 ## Overview
 
-1. The folder **src/components** contains a file called `HTMLElement.mjs`. In this file, create a module that meets the following requirements:
+1. The folder **src/components** contains a file called `HTMLElement.js`. In this file, create a module that meets the following requirements:
     * Create a class called `HTMLElement`. This class should have a constructor with two parameters: tag and content. Both of these parameters should be stored as instance variables within the class. Instance variables should have the same names as the parameters.
     * Once the HTMLElement class is created, add a function to the class called `render` that can be called publicly. This function should return the HTML element with the content provided.
     * Within `render`, use a template literal to render the element.
@@ -46,7 +46,7 @@
 
   * Note that you'll need to change the `export default {}` line to export the class instead of an empty object literal.
 
-2. The folder **src/components** contains a file called `DivElement.mjs`. In this file, create a module that meets the following requirements:
+2. The folder **src/components** contains a file called `DivElement.js`. In this file, create a module that meets the following requirements:
     * Create a class called `DivElement` that extends the `HTMLElement` class created previously. You'll need to import the class made in step 1.
     * This class should have a constructor with one parameter: `content`.
     * This class should inherit the render function in the parent class (do not override it, aka define it in `DivElement`).
@@ -60,14 +60,14 @@
     // prints "<div>What a wonderful world</div>"
     ```
 
-3. The folder **src/timer** contains two files called `Timer.mjs` and `runTimer.mjs`. Perform the following tasks:
+3. The folder **src/timer** contains two files called `Timer.js` and `runTimer.js`. Perform the following tasks:
     * Examine the code in these two files and determine each script's behavior.
     * Refactor the code to use the ES6 class syntax.
     * Refactor the code to use arrow function(s).
     * Refactor the code to use `let/const`.
     * Refactor the code to avoid assigning `this` to a variable.
 
-4. The folder **src/rolodex** contains two files called `people.json` and `rolodexPrinter.mjs`. Perform the following tasks:
+4. The folder **src/rolodex** contains two files called `people.json` and `rolodexPrinter.js`. Perform the following tasks:
     * Refactor the code to use template literals.
     * Refactor the code to use object destructuring.
     * Refactor the code to use array destructuring.
