@@ -12,4 +12,4 @@ class DivElement extends HTMLElement {
   }
 }
 
-export { DivElement as default };
+export default DivElement;

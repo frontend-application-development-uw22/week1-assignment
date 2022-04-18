@@ -16,4 +16,4 @@ class HTMLElement {
   }
 }
 
-export { HTMLElement as default };
+export default HTMLElement;
