@@ -1,5 +1,15 @@
-// Import HTMLElement here
+import HTMLElement from './HTMLElement';
 
-// Define class here
+// DivElement /////////////////////////////////////////////////////////////////
+// An HTML <div> and its inner [content].
+class DivElement extends HTMLElement {
+  // constructor ////////////////////////////////////////////////////////////
+  // Constructs DivElement with given [content].
+  constructor(content) {
+    super();
+    this.tag = 'div';
+    this.content = content;
+  }
+}
 
-// Export class here
+export default { DivElement };
