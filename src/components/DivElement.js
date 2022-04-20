@@ -1,19 +1,17 @@
 // Import HTMLElement here
 
-import { HTMLElement } from "./HTMLElement.js";
+import { HTMLElement } from "./HTMLElement";
 
 // Define class here
 
 class DivElement extends HTMLElement {
-    constructor ( content ) {
+    constructor ( tag, content ) {
         super();
+        this.tag = `div`;
         this.content = content;
     }
-    render(tag, content) {
-        super.render();
-    }
-}
+};
 
 // Export class here
 
-export {DivElement};
+export default DivElement;
