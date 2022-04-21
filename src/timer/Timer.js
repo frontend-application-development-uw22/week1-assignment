@@ -1,17 +1,18 @@
-function Timer(seconds) {
-  this.seconds = seconds;
-}
+class Timer {
+  constructor(seconds) {
+    this.seconds = seconds;
+  }
 
-Timer.prototype.start = () => {
-  const instance = this;
-  const timerInterval = setInterval(() => {
-    if (instance.seconds === 0) {
-      clearInterval(timerInterval);
-    }
-    // eslint-disable-next-line no-console
-    console.log(instance.seconds);
-    instance.seconds -= 1;
-  }, 1000);
-};
+  start() {
+    const timerInterval = setInterval(() => {
+      if (this.seconds === 0) {
+        clearInterval(timerInterval);
+      }
+      // eslint-disable-next-line no-console
+      console.log(this.seconds);
+      this.seconds -= 1;
+    }, 1000);
+  }
+}
 
 export default Timer;
