@@ -3,16 +3,15 @@
 
 // Define class here
 class DivElement extends HTMLElement {
-    constructor (content) {
+    constructor(content) {
         super('div',content);
         this.content = content;
     }
 }
 // Export class here
-export {
-    HTMLElement,
-    DivElement
-}
+export {DivElement,HTMLElement};
 
-const andIThinkToMyself = new DivElement('What a wonderful world');
-console.log(andIThinkToMyself.render());
+
+// const andIThinkToMyself = new DivElement('What a wonderful world');
+
+// console.log(andIThinkToMyself.render());
