@@ -72,6 +72,7 @@
     * Refactor the code to use object destructuring.
     * Refactor the code to use array destructuring.
 
+
 ## Submission
 
 * In order for a valid submission, all tests must pass when running `npm test`.
