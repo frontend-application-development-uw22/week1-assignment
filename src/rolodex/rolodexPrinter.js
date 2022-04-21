@@ -7,5 +7,9 @@ people.forEach(function (person) {
   const email = person.email;
   const phone = person.phone;
 
-  console.log('First name: ' + firstName + '\nLast name: ' + lastName + '\nEmail: ' + email + '\nPhone number: ' + phone + '\n');
+  console.log(`First name: ${firstName} 
+  Last name: ${lastName}
+  Email: ${email}
+  Phone number: ${phone}
+  `);
 });

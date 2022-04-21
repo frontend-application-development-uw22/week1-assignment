@@ -1,5 +1,5 @@
-import HTMLElement from '../src/components/HTMLElement';
-import DivElement from '../src/components/DivElement';
+import HTMLElement from '../src/components/HTMLElement.js';
+import DivElement from '../src/components/DivElement.js';
 
 describe('DivElement class', () => {
   let instance;
