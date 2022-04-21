@@ -1,5 +1,13 @@
-// Import HTMLElement here
+import HTMLElement from './HTMLElement.js';
 
-// Define class here
+class DivElement extends HTMLElement {
+  constructor(content) {
+    super('div', content);
+  }
+  render(){
+    return `${this.content}`;
+  }
+}
+const andIThinkToMyself = new DivElement('What a wonderful world');
 
-// Export class here
+console.log(andIThinkToMyself.render());

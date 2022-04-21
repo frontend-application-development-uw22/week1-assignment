@@ -1,5 +1,6 @@
 {
   "name": "week1",
+  "type": "module",
   "version": "1.0.0",
   "description": "Week 1 Assignment",
   "main": "index.js",
