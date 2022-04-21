@@ -6,8 +6,8 @@ class HTMLElement {
     this.content = content;
   }
 
-render = function () { 
-    return( 
+  render() {
+    return (
       `<${this.tag}>${this.content}</${this.tag}>`
     );
   }
