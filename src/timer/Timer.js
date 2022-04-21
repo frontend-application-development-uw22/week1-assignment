@@ -1,7 +1,7 @@
 class Timer {
   constructor(seconds) {
-  this.seconds = seconds;
-  }
+    this.seconds = seconds;
+  };
 
   start() {
     const timerInterval = setInterval(() => {
@@ -14,5 +14,3 @@ class Timer {
 }
 
 export default Timer;
-
-
