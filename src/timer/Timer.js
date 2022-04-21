@@ -1,7 +1,7 @@
 class Timer {
   constructor(seconds) {
     this.seconds = seconds;
-  };
+  }
 
   start() {
     const timerInterval = setInterval(() => {
@@ -9,7 +9,7 @@ class Timer {
         clearInterval(timerInterval);
       }
       this.seconds -= 1;
-    }, 1000)
+    }, 1000);
   }
 }
 
