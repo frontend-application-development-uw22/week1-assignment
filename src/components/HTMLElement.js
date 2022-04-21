@@ -1,12 +1,11 @@
 // Define class here
-class HTMLElement{
-    constructor (tag,content){
+class HTMLElement {
+    constructor (tag,content) {
         this.tag = tag;
         this.content = content;
     }
-
-    render (){
-        return `<p>${this.content}</p>`;
+     render = function() {
+        return (`<${this.tag}>${this.content}</${this.tag}>`);
     }
 }
 // Export class here
