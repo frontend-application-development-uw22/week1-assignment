@@ -1,20 +1,18 @@
 class Timer {
-  constructor(seconds){
+  constructor(seconds) {
   this.seconds = seconds;
   }
 
   start() {
-    const timerInterval = setInterval(()=> {
+    const timerInterval = setInterval(() => {
       if (this.seconds === 0) {
         clearInterval(timerInterval);
       }
-  
-      console.log(this.seconds);
       this.seconds -= 1;
-    }, 1000);
-  };
-  
+    }, 1000)
+  }
 }
 
-
 export default Timer;
+
+
