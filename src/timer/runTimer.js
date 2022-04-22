@@ -1,4 +1,4 @@
 import Timer from './Timer';
 
-const countdown = new Timer(10);
+const countdown = new Timer(2);
 countdown.start();
