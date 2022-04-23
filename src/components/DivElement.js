@@ -8,6 +8,6 @@ class DivElement extends HTMLElement {
 
 // Export class here
 export default DivElement;
-const divElmt = new DivElement(`What a wonderful world`);
+const divElmt = new DivElement('What a wonderful world');
 console.log(divElmt);
 console.log(divElmt.render());

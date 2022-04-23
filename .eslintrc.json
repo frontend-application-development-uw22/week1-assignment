@@ -3,5 +3,20 @@
   "env": {
     "node": true,
     "jest": true
+  },
+  "rules": {
+    "import/prefer-default-export": 0,
+    "linebreak-style": ["error", "windows"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".json",
+          ".jsx"
+        ]
+      }
+    }
   }
 }
