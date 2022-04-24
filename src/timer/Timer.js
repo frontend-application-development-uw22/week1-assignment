@@ -11,7 +11,7 @@ class Timer {
 
       console.log(this.seconds);
       this.seconds -= 1;
-    }, 1000)
+    }, 1000);
   }
 }
 
