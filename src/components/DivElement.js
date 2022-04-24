@@ -10,7 +10,7 @@ class DivElement extends HTMLElement {
     render(){
         // Instructions unclear.
         // Sounds like this is what you want:
-        return `<${tag}>${content}</${tag}>`;
+        return `<${this.tag}>${this.content}</${this.tag}>`;
 
         // Easier if it was
         // return super.render();
