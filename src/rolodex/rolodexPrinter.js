@@ -13,3 +13,15 @@ people.forEach(function (person) {
   Phone number: ${phone}
   `);
 });
+
+
+people.forEach((person) => {
+  let {firstName, lastName} = person.name.split(' ');
+  let {,,,email,,phone,,,} = person;
+
+  console.log(`First name: ${firstName} 
+  Last name: ${lastName}
+  Email: ${email}
+  Phone number: ${phone}
+  `);
+})
