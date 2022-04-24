@@ -4,9 +4,9 @@ class Timer {
   }
 
   start() {
-    this.runTimer = setInterval(() => {
+    const runTimer = setInterval(() => {
       if (this.seconds === 0) {
-        clearInterval(this.runTimer);
+        clearInterval(runTimer);
       }
       console.log(this.seconds);
       this.seconds -= 1;
