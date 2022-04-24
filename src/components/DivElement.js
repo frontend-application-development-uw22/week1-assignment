@@ -1,10 +1,11 @@
-import HTMLElement from './HTMLElement.js';
+import HTMLElement from "./HTMLElement.js";
 
-class DivElement extends HTMLElement {
+console.log(HTMLElement); //
+class DivElement extends HTMLElement { //ESLint
   constructor(content) {
     super('div', content);
   }
-  render(){
+  render() {
     return `${this.content}`;
   }
 }
