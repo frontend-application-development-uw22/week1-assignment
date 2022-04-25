@@ -11,7 +11,7 @@ class Timer {
       }
 
       console.log(instance);
-      instance -= 1;    // the linter does not like instance--. WTF?
+      instance -= 1; // the linter does not like "instance--". WTF?
     }, 1000);
   }
 }
