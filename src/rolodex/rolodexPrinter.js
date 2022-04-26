@@ -1,11 +1,11 @@
-import people from './people.json';
+import people from './people.json' assert {type: "json"};
 
 people.forEach(function (person) {
-  const names = person.name.split(' ');
-  const firstName = names[0];
-  const lastName = names[1];
-  const email = person.email;
-  const phone = person.phone;
+  const [firstName, lastName] = person.name.split(' ');
+  const { email, phone } = person;
 
-  console.log('First name: ' + firstName + '\nLast name: ' + lastName + '\nEmail: ' + email + '\nPhone number: ' + phone + '\n');
+  console.log(`First name: ${firstName}
+  Last Name: ${lastName}
+  Email: ${email}
+  Phone Number: ${phone}`)
 });
