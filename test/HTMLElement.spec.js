@@ -1,4 +1,4 @@
-import HTMLElement from '../src/components/HTMLElement';
+import HTMLElement from '../src/components/HTMLElement.js';
 
 describe('HTMLElement class', () => {
   let instance;
