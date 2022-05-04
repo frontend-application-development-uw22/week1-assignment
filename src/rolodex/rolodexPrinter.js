@@ -1,11 +1,17 @@
+// Refactor the code to use template literals.
+//     * Refactor the code to use object destructuring.
+//     * Refactor the code to use array destructuring.
+
 import people from './people.json';
 
-people.forEach(function (person) {
-  const names = person.name.split(' ');
-  const firstName = names[0];
-  const lastName = names[1];
-  const email = person.email;
-  const phone = person.phone;
+people.forEach((person) => {
+  const {
+    name,
+    email,
+    phone,
+  } = person;
 
-  console.log('First name: ' + firstName + '\nLast name: ' + lastName + '\nEmail: ' + email + '\nPhone number: ' + phone + '\n');
+  const [firstName, lastName] = name.split(' ');
+
+  console.log(`First name: '${firstName}\nLast name: ${lastName}\nEmail: ${email}\nPhone number: ${phone}`);
 });
